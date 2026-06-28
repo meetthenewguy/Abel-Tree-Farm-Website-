@@ -59,7 +59,7 @@ const form = document.getElementById('quoteForm');
 const errorBox = document.getElementById('formError');
 const statusBox = document.getElementById('formStatus');
 if(form){
-  form.addEventListener('submit', async (event) => {
+  form.addEventListener('submit', (event) => {
     event.preventDefault();
     errorBox.textContent = '';
     statusBox.textContent = '';
@@ -72,25 +72,30 @@ if(form){
     if(!phone && !email){ errorBox.textContent = 'Add a phone number or email so the farm can respond.'; form.elements.phone.focus(); return; }
     if(!form.checkValidity()){ form.reportValidity(); return; }
 
-    const button = form.querySelector('button[type="submit"]');
-    const original = button.textContent;
-    button.disabled = true;
-    button.textContent = 'Sending...';
-    try{
-      const body = new URLSearchParams(new FormData(form)).toString();
-      const response = await fetch(form.getAttribute('action') || '/', {
-        method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body
-      });
-      if(!response.ok) throw new Error('Form server did not confirm the request.');
-      statusBox.textContent = 'Request received. Abel Tree Farm will follow up with availability and next steps.';
-      statusBox.classList.add('show');
-      form.reset();
-    }catch(err){
-      errorBox.textContent = 'The form did not confirm. Please call or text (561) 798-2087 so the request is not missed.';
-    }finally{
-      button.disabled = false;
-      button.textContent = original;
-    }
+    const fields = [
+      ['Name', name],
+      ['Phone', phone],
+      ['Email', email],
+      ['Project city', form.elements.projectCity.value.trim()],
+      ['Buyer type', form.elements.customerType.value.trim()],
+      ['Material needed', form.elements.species.value.trim()],
+      ['Quantity / size', form.elements.quantity.value.trim()],
+      ['Project notes', form.elements.message.value.trim()]
+    ].filter(([, value]) => value);
+
+    const body = [
+      'Abel Tree Farm website request',
+      '',
+      ...fields.map(([label, value]) => `${label}: ${value}`),
+      '',
+      'Please confirm current availability and next steps.'
+    ].join('\n');
+
+    const subject = `Abel Tree Farm request from ${name}`;
+    const mailto = `mailto:abeltreefarm@aol.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
+    statusBox.textContent = 'Your email app should open with the request details. Please send the email from there, or call/text (561) 798-2087 if it does not open.';
+    statusBox.classList.add('show');
   });
 }
 
