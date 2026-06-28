@@ -1,0 +1,1 @@
+Not run. Static package created in container. Open in browser and check console after deploy.

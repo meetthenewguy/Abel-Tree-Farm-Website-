@@ -1,0 +1,1 @@
+Form logic built to require server response.ok before success. Real submission proof pending Netlify deploy and notification setup.
