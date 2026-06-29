@@ -102,3 +102,11 @@ if(form){
 
 const year = document.getElementById('year');
 if(year) year.textContent = new Date().getFullYear();
+
+if('serviceWorker' in navigator){
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.getRegistration().then(registration => {
+      if(registration) registration.unregister();
+    }).catch(() => {});
+  });
+}
