@@ -1,4 +1,4 @@
-const CACHE_NAME = 'abel-tree-farm-static-v1';
+const CACHE_NAME = 'abel-tree-farm-static-v2';
 const ASSETS = [
   '/',
   '/index.html',
