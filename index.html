@@ -18,6 +18,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f231a'/%3E%3Cpath d='M32 10c-8 8-10 17-7 25-6-4-13-2-17 3 7 1 12 5 14 10-7 0-13 4-16 10 10 1 18-2 24-8v10h5V50c6 6 14 9 24 8-3-6-9-10-16-10 2-5 7-9 14-10-4-5-11-7-17-3 3-8 1-17-8-25z' fill='%23d8b97c'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/updates.css">
   <script type="application/ld+json">
 [
   {
@@ -128,6 +129,7 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
       <nav id="primary-menu" class="primary-nav" aria-label="Primary navigation">
         <a href="#grow">Inventory</a>
+        <a href="availability.html" class="nav-availability">Availability</a>
         <a href="#services">Services</a>
         <a href="#area">Service Area</a>
         <a href="#visit">Visit</a>
@@ -146,6 +148,7 @@
           <div class="cta-row">
             <a class="btn btn-primary" href="tel:+15617982087">Call (561) 798-2087</a>
             <a class="btn btn-outline" href="sms:+15617982087">Text the Farm</a>
+            <a class="btn btn-outline" href="availability.html">Current Availability</a>
             <a class="btn btn-quiet" href="#grow">See Inventory</a>
           </div>
           <dl class="hero-facts" aria-label="Farm facts">
@@ -198,6 +201,17 @@
           <button type="button" class="chip" data-filter="hedging" aria-pressed="false">Hedging</button>
           <button type="button" class="chip" data-filter="shade" aria-pressed="false">Shade</button>
           <button type="button" class="chip" data-filter="fieldgrown" aria-pressed="false">Field grown</button>
+        </div>
+        <div class="availability-callout reveal">
+          <div>
+            <p class="eyebrow">Current Availability</p>
+            <h3>Need sizes before a bid?</h3>
+            <p>The weekly availability download is being prepared. For live counts today, call or text the farm with plant names, sizes, quantities, and project location.</p>
+          </div>
+          <div class="availability-actions">
+            <a class="btn btn-primary" href="availability.html">Open Availability Page</a>
+            <a class="btn dark-outline" href="tel:+15617982087">Call Now</a>
+          </div>
         </div>
         <div class="inventory-grid" id="inventoryGrid">
           <article class="inventory-card reveal" data-cat="coastal fieldgrown">
@@ -487,7 +501,7 @@
     <div class="container footer-bottom"><span>© <span id="year"></span> Abel Tree Farm LLC</span><span>Loxahatchee, Florida · Palm Beach County</span></div>
   </footer>
 
-  <div class="mobile-actions" aria-label="Quick contact actions"><a href="tel:+15617982087">Call</a><a href="sms:+15617982087">Text</a><a href="#contact">Quote</a></div>
+  <div class="mobile-actions" aria-label="Quick contact actions"><a href="tel:+15617982087">Call</a><a href="sms:+15617982087">Text</a><a href="availability.html">Availability</a></div>
   <script src="js/main.js" defer></script>
 </body>
 </html>
