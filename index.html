@@ -20,47 +20,45 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/updates.css">
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "GardenStore",
-  "name": "Abel Tree Farm",
-  "legalName": "Abel Tree Farm LLC",
-  "description": "Working tree farm and wholesale grower in Loxahatchee, Florida, supplying palms, coastal trees, privacy hedges, and field-grown nursery stock for South Florida landscapes. Call for current availability and sizes.",
-  "url": "https://www.abeltreefarm.com/",
-  "telephone": "+15617982087",
-  "email": "abeltreefarm@aol.com",
-  "priceRange": "$$$",
-  "image": "https://www.abeltreefarm.com/images/draft-gallery-actual-gate-watercolor-v2.png",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "2695 B Rd",
-    "addressLocality": "Loxahatchee",
-    "addressRegion": "FL",
-    "postalCode": "33470",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 26.716833,
-    "longitude": -80.2914009
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "07:30",
-      "closes": "16:00"
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "GardenStore",
+    "name": "Abel Tree Farm",
+    "legalName": "Abel Tree Farm LLC",
+    "description": "Working tree farm and wholesale grower in Loxahatchee, Florida, supplying palms, coastal trees, privacy hedges, and field-grown nursery stock for South Florida landscapes. Call for current availability and sizes.",
+    "url": "https://www.abeltreefarm.com/",
+    "telephone": "+15617982087",
+    "email": "abeltreefarm@aol.com",
+    "priceRange": "$$$",
+    "image": "https://www.abeltreefarm.com/images/draft-gallery-actual-gate-watercolor-v2.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2695 B Rd",
+      "addressLocality": "Loxahatchee",
+      "addressRegion": "FL",
+      "postalCode": "33470",
+      "addressCountry": "US"
     },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Saturday",
-      "opens": "07:30",
-      "closes": "12:00"
-    }
-  ],
-  "areaServed": ["Palm Beach County", "Broward County", "Martin County", "St. Lucie County", "South Florida"],
-  "sameAs": ["https://instagram.com/abeltreefarm", "https://www.facebook.com/profile.php?id=100066695918594"]
-}
+    "geo": {"@type": "GeoCoordinates", "latitude": 26.716833, "longitude": -80.2914009},
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "07:30", "closes": "16:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "07:30", "closes": "12:00"}
+    ],
+    "areaServed": ["Palm Beach County", "Broward County", "Martin County", "St. Lucie County", "South Florida"],
+    "sameAs": ["https://instagram.com/abeltreefarm", "https://www.facebook.com/profile.php?id=100066695918594"]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Do you sell to landscapers and contractors?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Call or text with the plant name, size, quantity, project city, and timing so Abel Tree Farm can confirm current availability."}},
+      {"@type": "Question", "name": "Can homeowners buy directly?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but please call first. Abel Tree Farm is a working farm, not a retail garden center. The farm can help confirm whether the material you need is available and whether a visit makes sense."}},
+      {"@type": "Question", "name": "Is the inventory live?", "acceptedAnswer": {"@type": "Answer", "text": "No. Inventory changes by season, growth stage, and project volume. The website shows sample material. Call or text for current counts."}},
+      {"@type": "Question", "name": "Do you handle permits or code approval?", "acceptedAnswer": {"@type": "Answer", "text": "Abel Tree Farm can discuss plant material suited to South Florida conditions. Formal code, permitting, and compliance decisions should be handled by your contractor, landscape architect, or permitting professional."}}
+    ]
+  }
+]
   </script>
 </head>
 <body>
@@ -88,12 +86,12 @@
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <p class="eyebrow">Wholesale grower · Palm Beach County</p>
-          <h1>Wholesale palms, trees, and hedging grown in Palm Beach County.</h1>
-          <p class="lede">Abel Tree Farm supplies South Florida landscape material from its working farm in Loxahatchee. Call or text with the plant, size, quantity, project city, and timing so we can confirm what is ready.</p>
+          <h1>South Florida landscape material, grown close to the job.</h1>
+          <p class="lede">Abel Tree Farm supplies palms, coastal trees, privacy hedging, and field-grown nursery stock from Loxahatchee for contractors, builders, municipalities, estate buyers, and homeowners. Call or text before bidding, scheduling, or visiting so the farm can confirm current availability.</p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="tel:+15617982087">Call Current Availability</a>
-            <a class="btn btn-outline" href="#grow">View Sample Inventory</a>
-            <a class="btn btn-quiet" href="mailto:abeltreefarm@aol.com?subject=Abel%20Tree%20Farm%20Availability%20Request">Request by Email</a>
+            <a class="btn btn-primary" href="tel:+15617982087">Call Current Needs</a>
+            <a class="btn btn-outline" href="sms:+15617982087">Text Current Needs</a>
+            <a class="btn btn-quiet" href="#grow">View Sample Inventory</a>
           </div>
           <dl class="hero-facts" aria-label="Farm facts">
             <div><dt>Location</dt><dd>Loxahatchee, FL</dd></div>
@@ -117,13 +115,20 @@
       </div>
     </section>
 
+    <section class="call-first" aria-label="Call first notice">
+      <div class="container">
+        <div><strong>Call before you drive.</strong> <span>Availability changes quickly. A short call or text helps confirm what is ready before bidding, scheduling, or visiting.</span></div>
+        <a class="btn btn-primary" href="tel:+15617982087">Call the Farm</a>
+      </div>
+    </section>
+
     <section id="farm" class="section-light">
       <div class="container split">
         <div class="copy-block reveal">
           <p class="eyebrow">The Farm</p>
           <h2>A working grower, not a showroom.</h2>
-          <p>Abel Tree Farm is a working tree farm in Loxahatchee, west of Palm Beach. We grow and source palms, coastal trees, privacy hedges, and field-grown nursery stock for South Florida landscapes.</p>
-          <p>Contractors, builders, estate managers, municipalities, and homeowners call before visiting so the farm can confirm what is available, what sizes are ready, and whether a farm walk makes sense.</p>
+          <p>Abel Tree Farm is a working grower in Loxahatchee Groves, west of Palm Beach. The farm helps buyers find palms, trees, and hedging that fit South Florida conditions, project timing, and available sizes.</p>
+          <p>Contractors need material that is healthy, ready, and sized correctly. Homeowners need straight answers before spending serious money. A short call helps confirm what is available and whether a farm visit makes sense.</p>
         </div>
         <figure class="image-plate reveal">
           <img src="images/draft-about-field-grown-rows-watercolor-v1.png" width="1536" height="1024" alt="Field-grown tree rows at Abel Tree Farm in South Florida." loading="lazy" decoding="async">
@@ -131,18 +136,34 @@
       </div>
     </section>
 
-    <section id="grow" class="section-paper inventory-section">
+    <section class="section-paper buyer-paths" aria-label="Buyer guidance">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">How to Contact</p>
+          <h2>Send the details that help us answer fast.</h2>
+          <p class="lede">Different buyers need different answers, but every request starts with plant names, sizes, quantities, project location, and timing.</p>
+        </div>
+        <div class="buyer-grid">
+          <article class="buyer-card reveal"><h3>Contractors & landscapers</h3><p>Call or text <strong>species, size, quantity, project city, and deadline</strong> before bidding or scheduling.</p></article>
+          <article class="buyer-card reveal"><h3>Homeowners</h3><p>Call first with <strong>photos, goals, and project location</strong> so the farm can say whether a visit makes sense.</p></article>
+          <article class="buyer-card reveal"><h3>Builders & municipalities</h3><p>Send <strong>project timing, access notes, quantities, and delivery needs</strong> so next steps can be confirmed.</p></article>
+          <article class="buyer-card reveal"><h3>Estate managers</h3><p>Share <strong>privacy, entry, shade, screening, and schedule needs</strong> for project-scale plant material.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="grow" class="section-light inventory-section">
       <div class="container">
         <div class="section-head reveal">
           <p class="eyebrow">What We Grow</p>
-          <h2>Sample material. Current counts by phone or text.</h2>
-          <p class="lede">Inventory changes by season, growth stage, and project volume. Use this list as a starting point, then call or text with the plant, size, quantity, project city, and timing.</p>
+          <h2>Sample inventory. Call for current counts.</h2>
+          <p class="lede">Below are examples of material Abel Tree Farm has publicly listed. Sizes and quantities change by season and project volume. Call or text with species, size, quantity, and project city before specifying, bidding, or visiting.</p>
         </div>
         <div class="filters reveal" role="group" aria-label="Filter inventory by type">
           <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All</button>
           <button type="button" class="chip" data-filter="palms" aria-pressed="false">Palms</button>
-          <button type="button" class="chip" data-filter="coastal" aria-pressed="false">Coastal</button>
-          <button type="button" class="chip" data-filter="hedging" aria-pressed="false">Hedging</button>
+          <button type="button" class="chip" data-filter="privacy" aria-pressed="false">Privacy</button>
+          <button type="button" class="chip" data-filter="coastal" aria-pressed="false">Coastal / Salt Tolerant</button>
           <button type="button" class="chip" data-filter="shade" aria-pressed="false">Shade</button>
           <button type="button" class="chip" data-filter="fieldgrown" aria-pressed="false">Field-Grown</button>
         </div>
@@ -150,133 +171,53 @@
           <div>
             <p class="eyebrow">Current Availability</p>
             <h3>Need sizes before a bid?</h3>
-            <p>Availability changes quickly. Our weekly availability sheet is being prepared. For current counts, call or text the farm with the plant name, size, quantity, deadline, and project location.</p>
+            <p>Inventory changes daily. For current counts, call or text the farm with the plant name, size, quantity, deadline, and project location.</p>
           </div>
           <div class="availability-actions">
-            <a class="btn btn-primary" href="availability.html">Availability Request Format</a>
-            <a class="btn dark-outline" href="tel:+15617982087">Call Now</a>
+            <a class="btn btn-primary" href="tel:+15617982087">Call Current Needs</a>
+            <a class="btn dark-outline" href="sms:+15617982087">Text Current Needs</a>
           </div>
         </div>
         <div class="inventory-grid" id="inventoryGrid">
-          <article class="inventory-card reveal" data-cat="coastal fieldgrown">
-            <figure class="plant-art">
-              <img src="images/draft-inventory-seagrape-watercolor-v1.png" width="1536" height="1024" alt="Seagrape material for Abel Tree Farm inventory." loading="lazy" decoding="async">
-            </figure>
-            <div class="inventory-copy">
-              <h3>Seagrape</h3>
-              <p class="latin">Coccoloba uvifera</p>
-              <p>Salt-tolerant coastal tree or hedge for privacy, screening, and specimen use.</p>
-              <p class="sizes">Shown sizes: 25G · field-grown when available</p>
-              <div class="tags"><span>Coastal</span><span>Salt Tolerant</span><span>Privacy</span></div>
-            </div>
+          <article class="inventory-card reveal" data-cat="coastal privacy fieldgrown">
+            <figure class="plant-art"><img src="images/draft-inventory-seagrape-watercolor-v1.png" width="1536" height="1024" alt="Seagrape material for Abel Tree Farm inventory." loading="lazy" decoding="async"></figure>
+            <div class="inventory-copy"><h3>Seagrape</h3><p class="latin">Coccoloba uvifera</p><p>Salt-tolerant coastal tree or hedge for privacy, screening, and specimen use.</p><p class="sizes">Sample sizes shown: 25G · field-grown when available</p><div class="tags"><span>Coastal</span><span>Salt Tolerant</span><span>Privacy</span></div></div>
           </article>
-          <article class="inventory-card reveal" data-cat="hedging container">
-            <figure class="plant-art">
-              <img src="images/draft-inventory-green-island-ficus-watercolor-v1.png" width="1536" height="1024" alt="Green Island Ficus material for Abel Tree Farm inventory." loading="lazy" decoding="async">
-            </figure>
-            <div class="inventory-copy">
-              <h3>Green Island Ficus</h3>
-              <p class="latin">Ficus microcarpa 'Green Island'</p>
-              <p>Dense, glossy material for low hedges, clean borders, and compact landscape massing.</p>
-              <p class="sizes">Shown sizes: 15G · 25G · 45G</p>
-              <div class="tags"><span>Low Hedge</span><span>Glossy</span><span>Tidy</span></div>
-            </div>
+          <article class="inventory-card reveal" data-cat="privacy hedging container">
+            <figure class="plant-art"><img src="images/draft-inventory-green-island-ficus-watercolor-v1.png" width="1536" height="1024" alt="Green Island Ficus material for Abel Tree Farm inventory." loading="lazy" decoding="async"></figure>
+            <div class="inventory-copy"><h3>Green Island Ficus</h3><p class="latin">Ficus microcarpa 'Green Island'</p><p>Dense, glossy material for low hedges, clean borders, and compact mass planting.</p><p class="sizes">Sample sizes shown: 15G · 25G · 45G</p><div class="tags"><span>Low Hedge</span><span>Glossy</span><span>Tidy</span></div></div>
           </article>
-          <article class="inventory-card reveal" data-cat="hedging fieldgrown">
-            <figure class="plant-art">
-              <img src="images/draft-inventory-podocarpus-watercolor-v1.png" width="1536" height="1024" alt="Podocarpus and Plum Pine material for Abel Tree Farm inventory." loading="lazy" decoding="async">
-            </figure>
-            <div class="inventory-copy">
-              <h3>Podocarpus / Plum Pine</h3>
-              <p class="latin">Podocarpus</p>
-              <p>Fine-textured evergreen material for privacy screens, formal hedges, and property lines.</p>
-              <p class="sizes">Shown sizes: 15G · field-grown when available</p>
-              <div class="tags"><span>Privacy</span><span>Formal Hedge</span><span>Screening</span></div>
-            </div>
+          <article class="inventory-card reveal" data-cat="privacy hedging fieldgrown">
+            <figure class="plant-art"><img src="images/draft-inventory-podocarpus-watercolor-v1.png" width="1536" height="1024" alt="Podocarpus and Plum Pine material for Abel Tree Farm inventory." loading="lazy" decoding="async"></figure>
+            <div class="inventory-copy"><h3>Podocarpus / Plum Pine</h3><p class="latin">Podocarpus</p><p>Fine-textured evergreen material for privacy screens, formal hedges, and property lines.</p><p class="sizes">Sample sizes shown: 15G · field-grown when available</p><div class="tags"><span>Privacy</span><span>Formal Hedge</span><span>Screening</span></div></div>
           </article>
           <article class="inventory-card reveal" data-cat="shade container">
-            <figure class="plant-art">
-              <img src="images/draft-inventory-black-olive-shady-lady-watercolor-v1.png" width="1536" height="1024" alt="Black Olive Shady Lady material for Abel Tree Farm inventory." loading="lazy" decoding="async">
-            </figure>
-            <div class="inventory-copy">
-              <h3>Black Olive ‘Shady Lady’</h3>
-              <p class="latin">Bucida buceras 'Shady Lady'</p>
-              <p>Layered canopy tree used for filtered shade, structure, and strong landscape presence.</p>
-              <p class="sizes">Shown sizes: 45G</p>
-              <div class="tags"><span>Shade</span><span>Specimen</span><span>Canopy</span></div>
-            </div>
+            <figure class="plant-art"><img src="images/draft-inventory-black-olive-shady-lady-watercolor-v1.png" width="1536" height="1024" alt="Black Olive Shady Lady material for Abel Tree Farm inventory." loading="lazy" decoding="async"></figure>
+            <div class="inventory-copy"><h3>Black Olive ‘Shady Lady’</h3><p class="latin">Bucida buceras 'Shady Lady'</p><p>Layered canopy tree used for filtered shade and strong landscape presence.</p><p class="sizes">Sample sizes shown: 45G</p><div class="tags"><span>Shade</span><span>Specimen</span><span>Canopy</span></div></div>
           </article>
-          <article class="inventory-card reveal" data-cat="coastal fieldgrown">
-            <figure class="plant-art">
-              <img src="images/draft-inventory-green-buttonwood-watercolor-v1.png" width="1536" height="1024" alt="Green Buttonwood material for Abel Tree Farm inventory." loading="lazy" decoding="async">
-            </figure>
-            <div class="inventory-copy">
-              <h3>Green Buttonwood</h3>
-              <p class="latin">Conocarpus erectus</p>
-              <p>Coastal tree and screening material for streetscapes, buffers, and resilient South Florida planting plans.</p>
-              <p class="sizes">Shown sizes: 25G</p>
-              <div class="tags"><span>Coastal</span><span>Resilient</span><span>Native</span></div>
-            </div>
+          <article class="inventory-card reveal" data-cat="coastal shade fieldgrown">
+            <figure class="plant-art"><img src="images/draft-inventory-green-buttonwood-watercolor-v1.png" width="1536" height="1024" alt="Green Buttonwood material for Abel Tree Farm inventory." loading="lazy" decoding="async"></figure>
+            <div class="inventory-copy"><h3>Green Buttonwood</h3><p class="latin">Conocarpus erectus</p><p>Coastal tree and screening material for streetscapes, buffers, and resilient planting plans.</p><p class="sizes">Sample sizes shown: 25G</p><div class="tags"><span>Coastal</span><span>Resilient</span><span>Native</span></div></div>
           </article>
-          <article class="inventory-card reveal" data-cat="palms fieldgrown">
-            <figure class="plant-art">
-              <img src="images/draft-inventory-areca-palm-watercolor-v1.png" width="1536" height="1024" alt="Areca Palm material for Abel Tree Farm inventory." loading="lazy" decoding="async">
-            </figure>
-            <div class="inventory-copy">
-              <h3>Areca Palm</h3>
-              <p class="latin">Dypsis lutescens</p>
-              <p>Clumping palm used for fast privacy, pool screening, property lines, and layered tropical texture.</p>
-              <p class="sizes">Shown sizes: 25G · field-grown when available</p>
-              <div class="tags"><span>Palm</span><span>Screening</span><span>Texture</span></div>
-            </div>
+          <article class="inventory-card reveal" data-cat="palms privacy fieldgrown">
+            <figure class="plant-art"><img src="images/draft-inventory-areca-palm-watercolor-v1.png" width="1536" height="1024" alt="Areca Palm material for Abel Tree Farm inventory." loading="lazy" decoding="async"></figure>
+            <div class="inventory-copy"><h3>Areca Palm</h3><p class="latin">Dypsis lutescens</p><p>Clumping palm used for fast privacy, pool screening, property lines, and tropical texture.</p><p class="sizes">Sample sizes shown: 25G · field-grown when available</p><div class="tags"><span>Palm</span><span>Screening</span><span>Privacy</span></div></div>
           </article>
-          <article class="inventory-card reveal" data-cat="shade fieldgrown container">
-            <figure class="plant-art">
-              <img src="images/draft-inventory-ficus-nitida-watercolor-v1.png" width="1536" height="1024" alt="Ficus nitida and Indian Laurel material for Abel Tree Farm inventory." loading="lazy" decoding="async">
-            </figure>
-            <div class="inventory-copy">
-              <h3>Ficus nitida / Indian Laurel</h3>
-              <p class="latin">Ficus microcarpa</p>
-              <p>Dense landscape material for larger screens, clipped structure, and mature shade where conditions are appropriate.</p>
-              <p class="sizes">Shown sizes: 25G · 45G · 100G · field-grown when available</p>
-              <div class="tags"><span>Screening</span><span>Shade</span><span>Field-Grown</span></div>
-            </div>
+          <article class="inventory-card reveal" data-cat="shade privacy fieldgrown container">
+            <figure class="plant-art"><img src="images/draft-inventory-ficus-nitida-watercolor-v1.png" width="1536" height="1024" alt="Ficus nitida and Indian Laurel material for Abel Tree Farm inventory." loading="lazy" decoding="async"></figure>
+            <div class="inventory-copy"><h3>Ficus nitida / Indian Laurel</h3><p class="latin">Ficus microcarpa</p><p>Dense material for larger screens, clipped structure, and mature shade where conditions fit.</p><p class="sizes">Sample sizes shown: 25G · 45G · 100G · field-grown when available</p><div class="tags"><span>Screening</span><span>Shade</span><span>Field-Grown</span></div></div>
           </article>
           <article class="inventory-card reveal" data-cat="hedging container">
-            <figure class="plant-art">
-              <img src="images/draft-inventory-schefflera-gold-capella-watercolor-v1.png" width="1536" height="1024" alt="Schefflera Gold Capella material for Abel Tree Farm inventory." loading="lazy" decoding="async">
-            </figure>
-            <div class="inventory-copy">
-              <h3>Schefflera ‘Gold Capella’</h3>
-              <p class="latin">Schefflera arboricola 'Gold Capella'</p>
-              <p>Variegated foliage for massing, accents, foundation planting, and durable landscape color.</p>
-              <p class="sizes">Shown sizes: 15G</p>
-              <div class="tags"><span>Color</span><span>Accent</span><span>Container</span></div>
-            </div>
+            <figure class="plant-art"><img src="images/draft-inventory-schefflera-gold-capella-watercolor-v1.png" width="1536" height="1024" alt="Schefflera Gold Capella material for Abel Tree Farm inventory." loading="lazy" decoding="async"></figure>
+            <div class="inventory-copy"><h3>Schefflera ‘Gold Capella’</h3><p class="latin">Schefflera arboricola 'Gold Capella'</p><p>Variegated foliage for accents, foundation planting, and durable landscape color.</p><p class="sizes">Sample sizes shown: 15G</p><div class="tags"><span>Color</span><span>Accent</span><span>Container</span></div></div>
           </article>
-          <article class="inventory-card reveal" data-cat="hedging container">
-            <figure class="plant-art">
-              <img src="images/draft-inventory-schefflera-green-watercolor-v1.png" width="1536" height="1024" alt="Schefflera Green material for Abel Tree Farm inventory." loading="lazy" decoding="async">
-            </figure>
-            <div class="inventory-copy">
-              <h3>Schefflera ‘Green’</h3>
-              <p class="latin">Schefflera arboricola 'Green'</p>
-              <p>Compact green foliage for hedging, foundation massing, and reliable tropical texture.</p>
-              <p class="sizes">Shown sizes: 7G</p>
-              <div class="tags"><span>Hedging</span><span>Foundation</span><span>Green</span></div>
-            </div>
+          <article class="inventory-card reveal" data-cat="privacy hedging container">
+            <figure class="plant-art"><img src="images/draft-inventory-schefflera-green-watercolor-v1.png" width="1536" height="1024" alt="Schefflera Green material for Abel Tree Farm inventory." loading="lazy" decoding="async"></figure>
+            <div class="inventory-copy"><h3>Schefflera ‘Green’</h3><p class="latin">Schefflera arboricola 'Green'</p><p>Compact green foliage for hedging, foundation planting, and tropical texture.</p><p class="sizes">Sample sizes shown: 7G</p><div class="tags"><span>Hedging</span><span>Foundation</span><span>Green</span></div></div>
           </article>
           <article class="inventory-card reveal" data-cat="palms fieldgrown">
-            <figure class="plant-art">
-              <img src="images/draft-inventory-montgomery-palm-watercolor-v1.png" width="1536" height="1024" alt="Montgomery Palm material for Abel Tree Farm inventory." loading="lazy" decoding="async">
-            </figure>
-            <div class="inventory-copy">
-              <h3>Montgomery Palm</h3>
-              <p class="latin">Veitchia arecina</p>
-              <p>Feather palm used for entries, avenues, vertical structure, and tropical planting rhythm.</p>
-              <p class="sizes">Shown sizes: field-grown when available</p>
-              <div class="tags"><span>Palm</span><span>Entry</span><span>Vertical</span></div>
-            </div>
+            <figure class="plant-art"><img src="images/draft-inventory-montgomery-palm-watercolor-v1.png" width="1536" height="1024" alt="Montgomery Palm material for Abel Tree Farm inventory." loading="lazy" decoding="async"></figure>
+            <div class="inventory-copy"><h3>Montgomery Palm</h3><p class="latin">Veitchia arecina</p><p>Feather palm used for entries, avenues, vertical structure, and tropical rhythm.</p><p class="sizes">Sample sizes shown: field-grown when available</p><div class="tags"><span>Palm</span><span>Entry</span><span>Vertical</span></div></div>
           </article>
         </div>
       </div>
@@ -284,11 +225,7 @@
 
     <section class="section-dark buying">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">How Buying Works</p>
-          <h2>Call before you drive. Walk the farm when it matters.</h2>
-          <p class="lede">A short call prevents wasted trips and helps the farm match you with the right block, size, and quantity.</p>
-        </div>
+        <div class="section-head reveal"><p class="eyebrow">How Buying Works</p><h2>Call before you drive. Walk the farm when it matters.</h2><p class="lede">A short call prevents wasted trips and helps the farm match you with the right block, size, and quantity.</p></div>
         <div class="steps">
           <div class="step reveal"><span>1</span><h3>Call or text</h3><p>Share plant name, size, quantity, timing, and project city.</p></div>
           <div class="step reveal"><span>2</span><h3>Confirm fit</h3><p>Discuss current material, available sizes, and practical substitutions.</p></div>
@@ -302,18 +239,16 @@
       <div class="container service-layout">
         <div class="copy-block reveal">
           <p class="eyebrow">Services</p>
-          <h2>Practical sourcing support for South Florida projects.</h2>
-          <p>Buyers call Abel Tree Farm when they need the right plant material, the right size, and a clear answer before a project deadline gets tight.</p>
+          <h2>Help choosing and coordinating project-scale plant material.</h2>
+          <p>Call with the plant, size, quantity, destination, and timing. Abel can help confirm what is ready, what fits the site, and whether the material should be walked in person before the project moves forward.</p>
           <div class="service-cards">
             <article class="service-card reveal"><span>01</span><h3>Wholesale supply</h3><p>Palms, hedging, coastal trees, and field-grown material for contractors and project buyers.</p></article>
-            <article class="service-card reveal"><span>02</span><h3>Project sourcing</h3><p>Tree, palm, and hedge material for privacy, entries, shade, screening, and mature landscape upgrades.</p></article>
+            <article class="service-card reveal"><span>02</span><h3>Specimen and estate-scale material</h3><p>Tree, palm, and hedge material for privacy, entries, shade, screening, and mature landscape upgrades.</p></article>
             <article class="service-card reveal"><span>03</span><h3>Delivery coordination</h3><p>Discuss quantity, destination, access, and timing directly with the farm before a project is scheduled.</p></article>
-            <article class="service-card reveal"><span>04</span><h3>Planting guidance</h3><p>Salt, wind, privacy, water, sun, and mature size all matter. The farm can help match species to site conditions.</p></article>
+            <article class="service-card reveal"><span>04</span><h3>Plant selection guidance</h3><p>Discuss site conditions such as salt, wind, privacy, water, sun, and mature size before choosing material.</p></article>
           </div>
         </div>
-        <figure class="image-plate wide reveal">
-          <img src="images/draft-service-install-equipment-watercolor-v1.png" width="1536" height="1024" alt="Large landscape material and nursery equipment prepared for delivery and installation." loading="lazy" decoding="async">
-        </figure>
+        <figure class="image-plate wide reveal"><img src="images/draft-service-install-equipment-watercolor-v1.png" width="1536" height="1024" alt="Large landscape material and nursery equipment prepared for delivery and installation." loading="lazy" decoding="async"></figure>
       </div>
     </section>
 
@@ -321,30 +256,22 @@
       <div class="container split reverse">
         <div class="copy-block reveal">
           <p class="eyebrow">Service Area</p>
-          <h2>Rooted in Palm Beach County. Useful across South Florida.</h2>
-          <p>Abel Tree Farm primarily serves Palm Beach County and supports select projects across Broward, Martin, and St. Lucie counties. Call with your project city, quantity, and timing to confirm whether pickup, delivery coordination, or sourcing support is available.</p>
+          <h2>Based in Loxahatchee. Serving Palm Beach County and South Florida project buyers.</h2>
+          <p>Abel Tree Farm primarily serves Palm Beach County, with project needs discussed for Broward, Martin, and St. Lucie counties. Call with the project city, quantity, timing, and access notes so the farm can confirm next steps.</p>
           <ul class="county-list">
             <li><strong>Palm Beach County</strong><span>primary market and home county</span></li>
-            <li><strong>Broward County</strong><span>project sourcing by request</span></li>
-            <li><strong>Martin County</strong><span>Treasure Coast landscape material</span></li>
+            <li><strong>Broward County</strong><span>larger orders by request</span></li>
+            <li><strong>Martin County</strong><span>project needs by request</span></li>
             <li><strong>St. Lucie County</strong><span>larger orders and project needs</span></li>
           </ul>
         </div>
-        <div class="area-card reveal">
-          <p class="eyebrow">Farm address</p>
-          <h3>2695 B Rd, Loxahatchee, FL 33470</h3>
-          <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=2695+B+Rd,+Loxahatchee,+FL+33470" target="_blank" rel="noopener">Open Directions</a>
-        </div>
+        <div class="area-card reveal"><p class="eyebrow">Farm address</p><h3>2695 B Rd, Loxahatchee, FL 33470</h3><a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=2695+B+Rd,+Loxahatchee,+FL+33470" target="_blank" rel="noopener">Open Directions</a></div>
       </div>
     </section>
 
     <section id="feed" class="section-light gallery-section">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">From the Farm</p>
-          <h2>From the Farm</h2>
-          <p class="lede">A look at the rows, plant material, equipment, and entrance behind South Florida landscape projects.</p>
-        </div>
+        <div class="section-head reveal"><p class="eyebrow">From the Farm</p><h2>From the Farm</h2><p class="lede">A look at the rows, plant material, equipment, and entrance behind South Florida landscape projects.</p></div>
         <div class="gallery-grid">
           <figure class="gallery-tile reveal"><img src="images/draft-gallery-palm-avenue-watercolor-v1.png" width="1536" height="1024" alt="Palm avenue and nursery rows at a South Florida tree farm." loading="lazy" decoding="async"></figure>
           <figure class="gallery-tile reveal"><img src="images/draft-gallery-shade-tree-rows-watercolor-v1.png" width="1536" height="1024" alt="Shade tree rows and specimen material at a South Florida nursery." loading="lazy" decoding="async"></figure>
@@ -358,12 +285,9 @@
 
     <section id="visit" class="section-paper">
       <div class="container split">
-        <figure class="image-plate wide reveal">
-          <img src="images/draft-visit-gate-watercolor-v1.png" width="1536" height="1024" alt="Tree farm entrance and nursery rows for a planned visit." loading="lazy" decoding="async">
-        </figure>
+        <figure class="image-plate wide reveal"><img src="images/draft-visit-gate-watercolor-v1.png" width="1536" height="1024" alt="Tree farm entrance and nursery rows for a planned visit." loading="lazy" decoding="async"></figure>
         <div class="copy-block reveal">
-          <p class="eyebrow">Visit</p>
-          <h2>Plan the visit around what you need.</h2>
+          <p class="eyebrow">Visit</p><h2>Plan the visit around what you need.</h2>
           <p>Abel Tree Farm is a working farm. Calling first helps confirm whether the material you need is available, what sizes are ready, and whether a visit is worth scheduling.</p>
           <div class="contact-list">
             <div><strong>Phone</strong><span><a href="tel:+15617982087">(561) 798-2087</a></span></div>
@@ -375,6 +299,18 @@
       </div>
     </section>
 
+    <section class="section-light faq compact" aria-label="Before you contact Abel Tree Farm">
+      <div class="container">
+        <div class="section-head reveal"><p class="eyebrow">Before You Contact</p><h2>Quick answers before the drive west.</h2></div>
+        <div class="faq-list">
+          <details class="reveal"><summary>Do you sell to landscapers and contractors?</summary><p>Yes. Call or text with the plant name, size, quantity, project city, and timing so we can confirm current availability.</p></details>
+          <details class="reveal"><summary>Can homeowners buy directly?</summary><p>Yes, but please call first. Abel Tree Farm is a working farm, not a retail garden center. We can help confirm whether the material you need is available and whether a visit makes sense.</p></details>
+          <details class="reveal"><summary>Is the inventory live?</summary><p>No. Inventory changes by season, growth stage, and project volume. The website shows sample material. Call or text for current counts.</p></details>
+          <details class="reveal"><summary>Do you handle permits or code approval?</summary><p>Abel can discuss plant material suited to South Florida conditions. Formal code, permitting, and compliance decisions should be handled by your contractor, landscape architect, or permitting professional.</p></details>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="section-dark contact-section">
       <div class="container contact-grid">
         <div class="copy-block reveal">
@@ -382,29 +318,20 @@
           <h2>Tell us what the project needs.</h2>
           <p class="lede">Include plant names, sizes, quantities, project city, timing, and whether pickup or delivery coordination is needed.</p>
           <div class="direct-actions">
-            <a href="tel:+15617982087"><strong>Call:</strong><span>(561) 798-2087</span></a>
-            <a href="sms:+15617982087"><strong>Text:</strong><span>Fastest for photos and quantities</span></a>
-            <a href="mailto:abeltreefarm@aol.com"><strong>Email:</strong><span>abeltreefarm@aol.com</span></a>
+            <a href="tel:+15617982087"><strong>Call:</strong><span>Current availability, project timing, and visit planning</span></a>
+            <a href="sms:+15617982087"><strong>Text:</strong><span>Photos, quick counts, and plant schedules</span></a>
+            <a href="mailto:abeltreefarm@aol.com"><strong>Email:</strong><span>Longer requests, bid sheets, and project notes</span></a>
           </div>
         </div>
         <form class="quote-form reveal" id="quoteForm" name="quote" action="mailto:abeltreefarm@aol.com" novalidate>
           <div class="field"><label for="name">Name <span aria-hidden="true">*</span></label><input id="name" name="name" type="text" autocomplete="name" required></div>
-          <div class="form-row">
-            <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel"></div>
-            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"></div>
-          </div>
-          <div class="form-row">
-            <div class="field"><label for="city">Project city</label><input id="city" name="projectCity" type="text" autocomplete="address-level2" placeholder="Palm Beach Gardens, Wellington…"></div>
-            <div class="field"><label for="buyer">Buyer type</label><select id="buyer" name="customerType"><option value="">Select one</option><option>Landscaper / contractor</option><option>Builder / developer</option><option>Municipality</option><option>Estate manager</option><option>Homeowner</option></select></div>
-          </div>
-          <div class="form-row">
-            <div class="field"><label for="species">Material needed</label><input id="species" name="species" type="text" placeholder="Podocarpus, Seagrape, Areca…"></div>
-            <div class="field"><label for="quantity">Quantity / size</label><input id="quantity" name="quantity" type="text" placeholder="25G, field-grown, 20 plants…"></div>
-          </div>
+          <div class="form-row"><div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel"></div><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"></div></div>
+          <div class="form-row"><div class="field"><label for="city">Project city</label><input id="city" name="projectCity" type="text" autocomplete="address-level2" placeholder="Palm Beach Gardens, Wellington…"></div><div class="field"><label for="buyer">Buyer type</label><select id="buyer" name="customerType"><option value="">Select one</option><option>Landscaper / contractor</option><option>Builder / developer</option><option>Municipality</option><option>Estate manager</option><option>Homeowner</option></select></div></div>
+          <div class="form-row"><div class="field"><label for="species">Material needed</label><input id="species" name="species" type="text" placeholder="Podocarpus, Seagrape, Areca…"></div><div class="field"><label for="quantity">Quantity / size</label><input id="quantity" name="quantity" type="text" placeholder="25G, field-grown, 20 plants…"></div></div>
           <div class="field"><label for="message">Project notes</label><textarea id="message" name="message" rows="5" placeholder="Timeline, delivery needs, site conditions, salt exposure, screening goal…"></textarea></div>
           <p class="form-error" id="formError" role="alert"></p>
           <button class="btn btn-primary" type="submit">Open Email Request</button>
-          <p class="form-note">Phone or email is required. This opens your email app so you can send the request directly.</p>
+          <p class="form-note">Phone or email is required. This opens your email app and sends your request by email so Abel can respond with current availability or next steps.</p>
           <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
         </form>
       </div>
