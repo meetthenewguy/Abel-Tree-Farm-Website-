@@ -59,8 +59,6 @@ const form = document.getElementById('quoteForm');
 const errorBox = document.getElementById('formError');
 const statusBox = document.getElementById('formStatus');
 if(form){
-  // Security-scanner cleanup: keep the static form from advertising a mailto action.
-  // The submit handler below builds the mailto link only after client-side validation.
   form.removeAttribute('action');
   form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -104,11 +102,3 @@ if(form){
 
 const year = document.getElementById('year');
 if(year) year.textContent = new Date().getFullYear();
-
-if('serviceWorker' in navigator){
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js').catch(() => {
-      // The site remains fully usable if the browser blocks service workers.
-    });
-  });
-}
